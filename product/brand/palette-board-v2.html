@@ -1,0 +1,213 @@
+<title>JIKO Colour Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday: a reviewed brand board for a cosy, brave app
+   IDEA paint-chip bands from Jiko's mountain, each with a design review pinned to it
+   PICTURE Jiko the snow monkey on a live home-screen mock, light and dark, per palette
+   COLOUR page chrome snow + ink; each band is painted in its own palette
+   TYPE Nunito 900 + Nunito (placeholder until type is chosen)
+   LAYOUT laptop: review table up top; each band = review + phones left, system right; phone: stacked */
+:root{color-scheme:light dark;--bg:light-dark(#fffcf8,#13242a);--ink:light-dark(#2a1e1a,#f4ede6);--muted:light-dark(#6b5a52,#afc0c0);--line:light-dark(#ede4dc,#2c474f);--card:light-dark(#ffffff,#1e343b)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Nunito,ui-rounded,system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(28px,4vw,56px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
+h1{font-weight:900;font-size:clamp(34px,5vw,50px);line-height:1.05;letter-spacing:-.02em;margin:0 0 12px}
+h2{font-weight:900;font-size:clamp(28px,3.6vw,38px);line-height:1.05;letter-spacing:-.02em;margin:0}
+h3{font-size:17px;font-weight:900;margin:22px 0 8px}
+p{margin:0 0 10px;max-width:68ch}
+.lede{font-size:18px;color:var(--muted)}
+.scroll{overflow-x:auto}
+.summary{width:100%;border-collapse:collapse;margin-top:18px;font-size:15px;min-width:640px}
+.summary th{text-align:left;font-size:14px;color:var(--muted);font-weight:800;padding:8px 10px;border-bottom:1px solid var(--line)}
+.summary td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.summary td:first-child{font-weight:900;white-space:nowrap}
+.strip{display:flex;height:10px;border-radius:6px;overflow:hidden;margin-top:6px;width:120px}.strip i{flex:1}
+.verdict{display:inline-block;font-size:13px;font-weight:900;padding:2px 10px;border-radius:99px;white-space:nowrap}
+.brief{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px;margin-top:20px}
+.brief div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-size:14px}
+.brief b{display:block;font-size:15px}
+.dir{background:var(--p-bg);color:var(--p-ink)}
+.dir .head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;margin-bottom:6px}
+.dir .mood{color:var(--p-muted);font-size:17px}
+.review{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin:18px 0 26px}
+.review div{background:var(--p-surface);border:1px solid var(--p-line);border-radius:16px;padding:12px 14px;font-size:14px}
+.review b{display:block;font-size:15px;margin-bottom:4px}
+.review ul{margin:0;padding-left:18px}.review li{margin-bottom:4px}
+.grid{display:grid;gap:clamp(20px,3vw,44px)}
+@media(min-width:960px){.grid{grid-template-columns:minmax(0,470px) minmax(0,1fr)}}
+.phones{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;align-items:flex-start}
+.phone{width:216px;border-radius:34px;padding:9px;background:#14110e}
+.plabel{color:var(--p-muted);font-size:13px;font-weight:800;text-align:center;margin-top:8px}
+.scr{border-radius:26px;overflow:hidden;background:var(--s-bg);color:var(--s-ink);font-size:12px;line-height:1.35}
+.sb{display:flex;justify-content:space-between;align-items:center;padding:10px 14px 4px;font-weight:800}
+.gem{display:inline-flex;align-items:center;gap:4px;background:var(--s-surface);border-radius:99px;padding:2px 9px 2px 4px;font-weight:900}
+.scene{height:168px;position:relative}.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.pass{margin:10px 12px 0;display:flex;justify-content:space-between;font-weight:800;font-size:11px;color:var(--s-muted)}
+.bar{margin:4px 12px 0;height:8px;border-radius:9px;background:var(--s-surface);overflow:hidden}.bar i{display:block;height:100%;width:35%;background:var(--s-primary);border-radius:9px}
+.card{margin:10px 12px 0;padding:10px 11px;border-radius:16px;background:var(--s-surface)}
+.card b{display:block;font-size:13px;font-weight:900;margin-bottom:2px}.card .t{color:var(--s-muted);font-size:12px}
+.btn{margin-top:8px;display:block;text-align:center;padding:7px;border-radius:12px;font-weight:900;background:var(--s-primary);color:var(--s-on)}
+.tag{display:inline-block;font-size:11px;font-weight:900;padding:2px 8px;border-radius:99px;margin-bottom:5px}
+.dots{display:flex;gap:4px;margin-top:6px}.dots i{width:12px;height:12px;border-radius:4px;background:var(--s-line)}
+.foot{height:14px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(124px,1fr));gap:10px}
+.s{border-radius:14px;overflow:hidden;background:var(--p-surface);border:1px solid var(--p-line)}
+.s .c{height:56px}.s .n{padding:7px 10px 8px;font-size:13px;line-height:1.3}.s .n b{display:block;font-weight:900}
+code{font:600 12px/1.3 ui-monospace,Menlo,monospace;color:var(--p-muted)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:13px;font-weight:900;padding:5px 12px;border-radius:99px;white-space:nowrap}
+.checks{width:100%;border-collapse:collapse;font-size:14px}
+.checks td{padding:7px 6px;border-top:1px solid var(--p-line);vertical-align:middle}
+.checks td:last-child{text-align:right;white-space:nowrap;font-weight:900}
+.pair{display:inline-flex;align-items:center;justify-content:center;width:40px;height:26px;border-radius:8px;font-weight:900;font-size:13px;margin-right:8px;vertical-align:middle}
+.gems{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.gems svg{width:60px;height:60px}
+.final ol{padding-left:20px;max-width:72ch}.final li{margin-bottom:8px}
+.note{font-size:14px;color:var(--muted);margin-top:14px;max-width:80ch}
+@media(max-width:600px){.phone{width:190px}.scene{height:150px}}
+</style>
+
+<div class="band"><div class="wrap">
+  <h1>Jiko colour board · v2</h1>
+  <p class="lede">A full review of the three v1 palettes against the brand brief, with every problem measured and fixed. One direction was replaced outright. All figures on this page are calculated live from the hex values.</p>
+  <div class="brief" id="brief"></div>
+  <div class="scroll"><table class="summary" id="summary"></table></div>
+</div></div>
+
+<div id="dirs"></div>
+
+<div class="band final"><div class="wrap">
+  <h2>Recommendation: Onsen Dawn v2</h2>
+  <ol>
+    <li><b>It's the only direction that hits every brief point.</b> It's warm and supportive, clearly the snow monkey's world (snow ground, onsen teal, persimmon lamps), gender-neutral, and nothing like Finch.</li>
+    <li><b>Jiko is now the star.</b> The face moved from coral to rose, so it no longer blends with the persimmon buttons, and Jiko's silhouette clears 2.5:1 against every wall.</li>
+    <li><b>The Spark Gem is its own thing:</b> lantern gold with an onsen-teal glint. It no longer looks like a button.</li>
+    <li><b>Night mode is ownable.</b> Generic navy became onsen night, a deep teal-black, so dark mode feels like the hut after dark.</li>
+    <li><b>It's a complete system.</b> Five stat colours, status colours and a fear-forecast scale that never uses alarm red.</li>
+  </ol>
+  <p class="note">Method: text contrast uses WCAG 2.1 (AA = 4.5:1 for body text). "Distinct" uses CIELAB ΔE76, where 25+ reads as clearly different hues at a glance. Jiko's silhouette is the fur's luminance contrast against the wall and the rug Jiko sits on; Jiko also gets a darker fur edge. The Jiko drawing is a placeholder sketch, and Nunito is a placeholder font.</p>
+</div></div>
+
+<script>
+{
+const BRIEF=[["Warm & supportive","Finch-like comfort, never clinical"],["Snow monkey's world","Snow, onsen, persimmon, cedar"],["Jiko is the star","The face and silhouette must pop"],["Gender-neutral","Not pink-led, not 'lock in' dark"],["Not Finch","Finch owns sky blue and teal"],["Complete system","Stats, status, gem, light and dark, all AA"]];
+const P=[
+{id:"dawn",name:"Onsen Dawn v2",v1:"Onsen Dawn",verdict:"Recommended",vbg:"#2ba8a0",vfg:"#0d2624",
+ mood:"Fresh snow, persimmon lamps, onsen steam. Cosy and hopeful, with a little sunrise in every screen.",
+ works:["Persimmon and onsen teal are a natural pair of complementary colours, so buttons and tags never compete","The warmth fits the supportive Finch-style voice","Clearly not Finch's blue"],
+ issues:["The Spark Gem gradient ended almost exactly on the button colour (ΔE 14), so gems looked like buttons","Jiko's face sat close to persimmon (ΔE 31) and to the blush accent (ΔE 16), so three reds crowded together","Jiko's fur on the peach wall was only 1.8:1, so Jiko faded into the room","Peach ground read 'apricot', not 'snow'","Dark mode used generic navy","The fear forecast used red, which made fear look like an error","No stat or status colours"],
+ changes:["Gem is now lantern gold with an onsen-teal glint","Face shifted to rose #ee7c8e; blush now belongs only to Jiko","Fur deepened, plus a fur edge and a light rug, so Jiko clears 2.5:1 everywhere","Ground is now true snow #fffcf8","Dark mode is onsen night #13242a","Forecast scale runs teal → gold → persimmon","Added 5 stat colours and status colours"],
+ gem:["#ffd36b","#2fb5a8"],fc:["#2ba8a0","#f2b33d","#f2803c"],
+ stats:[["Courage","#f2803c"],["Curiosity","#f2b33d"],["Connection","#9c8ce0"],["Body","#2ba8a0"],["Mind","#5868c4"]],
+ status:[["Success","#2f9e6b"],["Heads-up","#e8a12e"],["Error","#c63340"]],
+ L:{bg:"#fffcf8",surface:"#ffffff",ink:"#2a1e1a",muted:"#6b5a52",line:"#ede4dc",primary:"#f2803c",on:"#2a1e1a",secondary:"#2ba8a0",wall:"#fbe9da",floor:"#c98f62",rug:"#f7eee4",sky:"#cbede8",lamp:"#f2803c",fur:"#9c897c",furD:"#6f5f55",belly:"#efe6dd",face:"#ee7c8e"},
+ D:{bg:"#13242a",surface:"#1e343b",ink:"#f4ede6",muted:"#afc0c0",line:"#2c474f",primary:"#f58a4a",on:"#1c1410",secondary:"#3cc0b6",wall:"#1c3a40",floor:"#4a3830",rug:"#2a4a50",sky:"#2e5866",lamp:"#f58a4a",fur:"#a8968a",furD:"#7a695e",belly:"#e3d9cf",face:"#ee7c8e"},
+ sw:[["Snow","bg"],["Ink","ink"],["Persimmon","primary"],["Onsen teal","secondary"],["Jiko rose","face"],["Cedar","floor"],["Onsen night","Dbg"],["Night surface","Dsurface"]]},
+{id:"aizome",name:"Aizome & Hinoki",v1:"Persimmon & Cedar",verdict:"Replaced",vbg:"#3346a0",vfg:"#ffffff",
+ mood:"Japanese indigo dye, pale hinoki cypress wood and a persimmon spark. Calm, crafted, quietly confident.",
+ works:["v1 had a strong autumn hut mood","v1 dark mode was cosy"],
+ issues:["v1 was a near-duplicate of Onsen Dawn (both persimmon-led), so it wasn't a real alternative","Cream, rust and moss is a dated, over-used combination","Brown walls and floors camouflaged Jiko's brown fur, especially in dark mode","Autumn-only colours clash with seasonal themes; the base palette must be season-neutral"],
+ changes:["Replaced with a distinct indigo-led direction","Aizome indigo is iconic Japanese craft and gender-neutral","Hinoki wood keeps the hut warm without brown-on-brown","Persimmon moves to an accent, so the brand stays recognisable"],
+ gem:["#ffd36b","#f58a4a"],fc:["#5b9bd5","#e8b341","#ef7c3c"],
+ stats:[["Courage","#ef7c3c"],["Curiosity","#e8b341"],["Connection","#2ba8a0"],["Body","#5fa35a"],["Mind","#8c9bf0"]],
+ status:[["Success","#2f9e6b"],["Heads-up","#e8a12e"],["Error","#c63340"]],
+ L:{bg:"#fbf8f2",surface:"#ffffff",ink:"#1c2340",muted:"#59607a",line:"#e6e1d6",primary:"#3346a0",on:"#ffffff",secondary:"#ef7c3c",wall:"#f3e6cf",floor:"#d3ae7c",rug:"#f6ecd9",sky:"#d7e3f4",lamp:"#ef7c3c",fur:"#9c897c",furD:"#6f5f55",belly:"#efe6dd",face:"#ee7c8e"},
+ D:{bg:"#141a33",surface:"#1f2747",ink:"#eef0f8",muted:"#a9b0cc",line:"#2e3863",primary:"#8c9bf0",on:"#141a33",secondary:"#f58a4a",wall:"#222b4d",floor:"#4a3d33",rug:"#2c3660",sky:"#33427a",lamp:"#f58a4a",fur:"#a8968a",furD:"#7a695e",belly:"#e3d9cf",face:"#ee7c8e"},
+ sw:[["Washi","bg"],["Ink","ink"],["Aizome indigo","primary"],["Persimmon","secondary"],["Jiko rose","face"],["Hinoki","floor"],["Indigo night","Dbg"],["Night surface","Dsurface"]]},
+{id:"yuki",name:"Yuki Lantern",v1:"Yuki Night",verdict:"Reworked",vbg:"#f2b33d",vfg:"#2a1c00",
+ mood:"Fresh snow at dusk, lit by lantern gold. Crisp and clear, with a warm glow.",
+ works:["The most authentically 'snow' palette","Lantern gold was the standout colour in v1","Strong, legible dark mode"],
+ issues:["A teal primary on pale blue was the closest of the three to Finch (sky blue and teal UI)","Pale blue-grey with teal is the generic default app look","Cool-led colours felt less warm and supportive than the brief","Jiko's grey fur on the blue wall was only 1.7:1"],
+ changes:["Lantern gold promoted to primary, so it reads warm and is clearly not Finch","Teal moved to secondary","Ground is whiter snow, less blue","Fur deepened, plus a fur edge and a light rug under Jiko","Gem is now an ice crystal, distinct from the gold buttons"],
+ gem:["#e9fbff","#5cb8e6"],fc:["#2fa7d6","#9c8ce0","#f08a3e"],
+ stats:[["Courage","#f08a3e"],["Curiosity","#f2b33d"],["Connection","#2fa7d6"],["Body","#1e9e9a"],["Mind","#5f56c0"]],
+ status:[["Success","#2f9e6b"],["Heads-up","#e8a12e"],["Error","#c63340"]],
+ L:{bg:"#f6fafc",surface:"#ffffff",ink:"#142235",muted:"#4f6178",line:"#dde7ee",primary:"#f2b33d",on:"#2a1c00",secondary:"#1e9e9a",wall:"#e3eef5",floor:"#b6c6d4",rug:"#eef3f7",sky:"#ffffff",lamp:"#f2b33d",fur:"#9c897c",furD:"#6f5f55",belly:"#efe6dd",face:"#ee7c8e"},
+ D:{bg:"#0f1a2a",surface:"#1a2840",ink:"#eaf2f8",muted:"#a7b6c8",line:"#2a3a55",primary:"#f5c04f",on:"#2a1c00",secondary:"#3cc4be",wall:"#1d2d47",floor:"#2b3b55",rug:"#253652",sky:"#27466f",lamp:"#f5c04f",fur:"#a8968a",furD:"#7a695e",belly:"#e3d9cf",face:"#ee7c8e"},
+ sw:[["Snow","bg"],["Ink","ink"],["Lantern gold","primary"],["Onsen teal","secondary"],["Jiko rose","face"],["Slate","floor"],["Yuki night","Dbg"],["Night surface","Dsurface"]]}
+];
+const rgb=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255);
+const lum=h=>{const [r,g,b]=rgb(h).map(v=>v<=.03928?v/12.92:((v+.055)/1.055)**2.4);return .2126*r+.7152*g+.0722*b};
+const cr=(a,b)=>{const x=lum(a),y=lum(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)};
+const lab=h=>{const [r,g,b]=rgb(h).map(c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4);const X=(r*.4124+g*.3576+b*.1805)/.95047,Y=r*.2126+g*.7152+b*.0722,Z=(r*.0193+g*.1192+b*.9505)/1.08883;const f=t=>t>.008856?Math.cbrt(t):7.787*t+16/116;return [116*f(Y)-16,500*(f(X)-f(Y)),200*(f(Y)-f(Z))]};
+const de=(a,b)=>{const x=lab(a),y=lab(b);return Math.hypot(x[0]-y[0],x[1]-y[1],x[2]-y[2])};
+const onC=bg=>cr("#1a1410",bg)>=cr("#ffffff",bg)?"#1a1410":"#ffffff";
+const tone=(p,k)=>k[0]==="D"?p.D[k.slice(1)]:p.L[k];
+
+const jiko=c=>{let t="";for(let i=0;i<9;i++){const a=Math.PI*(1.08+i*.105);t+=`<circle cx="${(100+58*Math.cos(a)).toFixed(1)}" cy="${(92+58*Math.sin(a)).toFixed(1)}" r="15" fill="${c.fur}" stroke="${c.furD}" stroke-width="3"/>`}
+ return `<ellipse cx="100" cy="214" rx="50" ry="7" fill="#000" opacity=".14"/>
+ <ellipse cx="78" cy="204" rx="16" ry="9" fill="${c.furD}"/><ellipse cx="122" cy="204" rx="16" ry="9" fill="${c.furD}"/>
+ <ellipse cx="100" cy="164" rx="50" ry="44" fill="${c.fur}" stroke="${c.furD}" stroke-width="3"/>
+ <ellipse cx="100" cy="172" rx="30" ry="28" fill="${c.belly}"/>
+ <ellipse cx="54" cy="166" rx="13" ry="24" fill="${c.furD}" transform="rotate(14 54 166)"/><ellipse cx="146" cy="166" rx="13" ry="24" fill="${c.furD}" transform="rotate(-14 146 166)"/>
+ <circle cx="50" cy="186" r="9" fill="${c.face}"/><circle cx="150" cy="186" r="9" fill="${c.face}"/>
+ <circle cx="44" cy="98" r="13" fill="${c.furD}"/><circle cx="44" cy="98" r="7" fill="${c.face}"/><circle cx="156" cy="98" r="13" fill="${c.furD}"/><circle cx="156" cy="98" r="7" fill="${c.face}"/>
+ ${t}<circle cx="100" cy="96" r="58" fill="${c.fur}"/>
+ <path d="M100 146C68 130 55 110 60 88C64 70 82 64 94 73C97 75 99 78 100 80C101 78 103 75 106 73C118 64 136 70 140 88C145 110 132 130 100 146Z" fill="${c.face}"/>
+ <circle cx="85" cy="96" r="10" fill="#1d1512"/><circle cx="115" cy="96" r="10" fill="#1d1512"/><circle cx="88.5" cy="92" r="3.4" fill="#fff"/><circle cx="118.5" cy="92" r="3.4" fill="#fff"/>
+ <ellipse cx="74" cy="114" rx="8" ry="5" fill="#d9536a" opacity=".35"/><ellipse cx="126" cy="114" rx="8" ry="5" fill="#d9536a" opacity=".35"/>
+ <circle cx="96" cy="110" r="1.8" fill="#5b2a26"/><circle cx="104" cy="110" r="1.8" fill="#5b2a26"/>
+ <path d="M92 120Q100 127 108 120" fill="none" stroke="#5b2a26" stroke-width="3" stroke-linecap="round"/>`};
+
+const gemInner=(g,id)=>`<defs><linearGradient id="g${id}" x1="0" y1="0" x2="1" y2="1"><stop offset=".15" stop-color="${g[0]}"/><stop offset="1" stop-color="${g[1]}"/></linearGradient></defs>
+ <polygon points="32,4 56,18 56,46 32,60 8,46 8,18" fill="url(#g${id})"/><polygon points="32,4 56,18 32,26 8,18" fill="#fff" opacity=".4"/>
+ <polygon points="32,26 56,18 56,46 32,60" fill="#000" opacity=".1"/><path d="M32 14l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#fff" opacity=".9"/>`;
+
+const phone=(p,c,m)=>{const uid=p.id+m;
+ const vars=`--s-bg:${c.bg};--s-ink:${c.ink};--s-muted:${c.muted};--s-surface:${c.surface};--s-primary:${c.primary};--s-on:${c.on};--s-line:${c.line}`;
+ const st=p.stats[0][1];
+ return `<div><div class="phone"><div class="scr" style="${vars}">
+ <div class="sb"><span>9:41</span><span class="gem"><svg width="18" height="18" viewBox="0 0 64 64">${gemInner(p.gem,"s"+uid)}</svg>356</span></div>
+ <div class="scene"><svg viewBox="0 0 200 168" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Jiko the snow monkey in the hut">
+  <rect width="200" height="168" fill="${c.wall}"/>
+  <circle cx="150" cy="52" r="28" fill="#fff" opacity=".85"/><circle cx="150" cy="52" r="23" fill="${c.sky}"/><path d="M150 29v46M127 52h46" stroke="#fff" stroke-width="3" opacity=".85"/>
+  <rect x="29" y="18" width="4" height="16" fill="${c.furD}"/><rect x="18" y="34" width="26" height="40" rx="13" fill="${c.lamp}"/>
+  <path d="M0 132Q100 120 200 132V168H0Z" fill="${c.floor}"/><ellipse cx="102" cy="150" rx="62" ry="13" fill="${c.rug}"/>
+  <g transform="translate(55 30) scale(.47)">${jiko(c)}</g></svg></div>
+ <div class="pass"><span>Season 1</span><span>Tier 21 / 60</span></div><div class="bar"><i></i></div>
+ <div class="card"><b>Today's Spark</b><div class="t">Say good morning to a neighbour.</div><span class="btn">I did it</span></div>
+ <div class="card"><span class="tag" style="background:${st};color:${onC(st)}">Courage · Lv 3</span><b>The long-lost text</b><div class="t">Fear forecast: 6 / 10</div>
+ <div class="dots">${Array.from({length:10},(_,i)=>`<i style="${i<6?`background:${p.fc[Math.min(2,Math.floor(i/3.4))]}`:""}"></i>`).join("")}</div></div>
+ <div class="foot"></div></div></div><div class="plabel">${m==="L"?"Light":"Dark"}</div></div>`};
+
+const rate=(r,t)=>r>=t?`✓ ${r.toFixed(1)}`:`✕ ${r.toFixed(1)}`;
+const row=(label,fg,bg,val)=>`<tr><td>${fg?`<span class="pair" style="background:${bg};color:${fg}">Aa</span>`:""}${label}</td><td>${val}</td></tr>`;
+
+document.getElementById("brief").innerHTML=BRIEF.map(([a,b])=>`<div><b>${a}</b>${b}</div>`).join("");
+document.getElementById("summary").innerHTML=`<thead><tr><th>Direction</th><th>Verdict</th><th>Biggest v1 problem</th><th>Fix in v2</th></tr></thead><tbody>${P.map(p=>`<tr><td>${p.name}<div class="strip">${["bg","primary","secondary","face","floor","Dbg"].map(k=>`<i style="background:${tone(p,k)}"></i>`).join("")}</div></td><td><span class="verdict" style="background:${p.vbg};color:${p.vfg}">${p.verdict}</span></td><td>${p.issues[0]}</td><td>${p.changes[0]}</td></tr>`).join("")}</tbody>`;
+
+document.getElementById("dirs").innerHTML=P.map((p,i)=>{const L=p.L,D=p.D;
+ const vars=`--p-bg:${L.bg};--p-ink:${L.ink};--p-muted:${L.muted};--p-surface:${L.surface};--p-line:${L.line}`;
+ const li=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+ const silL=Math.min(cr(L.fur,L.wall),cr(L.fur,L.rug)),silD=Math.min(cr(D.fur,D.wall),cr(D.fur,D.rug));
+ return `<section class="band dir" id="${p.id}" style="${vars}"><div class="wrap">
+ <div class="head"><h2>${i+1}. ${p.name}</h2><span class="verdict" style="background:${p.vbg};color:${p.vfg}">${p.verdict}</span></div>
+ <p class="mood">${p.mood}${p.v1!==p.name.replace(" v2","")?` <span style="white-space:nowrap">(v1: ${p.v1})</span>`:""}</p>
+ <div class="review"><div><b>What works</b>${li(p.works)}</div><div><b>Problems found in v1</b>${li(p.issues)}</div><div><b>Changes in v2</b>${li(p.changes)}</div></div>
+ <div class="grid">
+  <div class="phones">${phone(p,L,"L")}${phone(p,D,"D")}</div>
+  <div>
+   <div class="sw">${p.sw.map(([nm,k])=>{const v=tone(p,k);return `<div class="s"><div class="c" style="background:${v}"></div><div class="n"><b>${nm}</b><code>${v}</code></div></div>`}).join("")}</div>
+   <h3>Stat colours</h3><div class="pills">${p.stats.map(([n,c])=>`<span class="pill" style="background:${c};color:${onC(c)}">${n}</span>`).join("")}</div>
+   <h3>Status colours</h3><div class="pills">${p.status.map(([n,c])=>`<span class="pill" style="background:${c};color:${onC(c)}">${n}</span>`).join("")}</div>
+   <h3>Checks</h3>
+   <table class="checks"><tbody>
+    ${row("Text on background",L.ink,L.bg,rate(cr(L.ink,L.bg),4.5))}
+    ${row("Muted text on background",L.muted,L.bg,rate(cr(L.muted,L.bg),4.5))}
+    ${row("Button label on primary",L.on,L.primary,rate(cr(L.on,L.primary),4.5))}
+    ${row("Dark mode: text",D.ink,D.bg,rate(cr(D.ink,D.bg),4.5))}
+    ${row("Dark mode: muted text",D.muted,D.bg,rate(cr(D.muted,D.bg),4.5))}
+    ${row("Dark mode: button label",D.on,D.primary,rate(cr(D.on,D.primary),4.5))}
+    ${row("Worst stat chip label",null,null,rate(Math.min(...p.stats.map(([,c])=>cr(onC(c),c))),4.5))}
+    ${row("Jiko silhouette vs room (light / dark)",null,null,`${rate(silL,2.5)} / ${rate(silD,2.5)}`)}
+    ${row("Jiko's face vs primary (ΔE)",null,null,rate(de(L.face,L.primary),25))}
+    ${row("Jiko's face vs error red (ΔE)",null,null,rate(de(L.face,p.status[2][1]),25))}
+    ${row("Spark Gem vs primary (ΔE)",null,null,rate(Math.min(de(p.gem[0],L.primary),de(p.gem[1],L.primary)),25))}
+   </tbody></table>
+   <h3>Spark Gem</h3><div class="gems"><svg viewBox="0 0 64 64" aria-hidden="true">${gemInner(p.gem,"big"+p.id)}</svg><code>${p.gem[0]} → ${p.gem[1]}</code></div>
+  </div></div></div></section>`}).join("");
+}
+</script>

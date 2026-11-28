@@ -1,6 +1,6 @@
 # JIKO: Product Spec v1
 
-*Status: v1 decisions are locked. Brand is in progress: Jiko, art style and tagline are locked; palette, type, logo and motion are open (see §15 and `product/BRAND.md`).*
+*Status: v1 decisions are locked. Brand is in progress: Jiko, art style, tagline and colour are locked; type, logo and motion are open (see §15 and `product/BRAND.md`).*
 *Market evidence behind these decisions: `research/00_EXECUTIVE_SUMMARY.md`.*
 
 ---
@@ -491,9 +491,10 @@ Full brand working document: `product/BRAND.md`.
 - **Art style:** Finch-style flat 2D, front-on.
 - **Tagline:** "Every brave tradition started with one monkey who went first."
 - **World:** a cosy mountain hut with an Onsen Garden.
+- **Colour:** Onsen Dawn v2 (snow, persimmon, onsen teal; onsen-night dark mode). Tokens in `product/tokens/`.
 
 **Open:**
-- Colour palette, typography, logo
+- Typography, logo
 - Visual design of the pass screen (reference: TFT single track with locked and open tiles)
 - Motion, sound, haptics
 - Season 1 final naming
@@ -596,3 +597,4 @@ WrappedSnapshot user_id, season_id, payload(json)
 | 28 | Onboarding: the snowball melts when the user names Jiko (replaces the egg) |
 | 29 | Home is a cosy mountain hut; **Onsen Garden** unlocks at Body Lv 5 and gets seasonal skins |
 | 30 | Tagline: "Every brave tradition started with one monkey who went first." |
+| 31 | Colour palette: **Onsen Dawn v2**, locked with tokens, stat, status, fear-scale and Spark Gem colours |

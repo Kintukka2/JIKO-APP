@@ -1,0 +1,77 @@
+/* JIKO colour tokens: Onsen Dawn v2. Source of truth: product/BRAND.md §5 */
+:root {
+  --jiko-bg: #fffcf8;
+  --jiko-surface: #ffffff;
+  --jiko-line: #ede4dc;
+  --jiko-ink: #2a1e1a;
+  --jiko-muted: #6b5a52;
+  --jiko-primary: #f2803c;
+  --jiko-on-primary: #2a1e1a;
+  --jiko-secondary: #2ba8a0;
+  --jiko-on-secondary: #0d2624;
+  --jiko-jiko-face: #ee7c8e;
+  --jiko-jiko-fur: #9c897c;
+  --jiko-jiko-fur-edge: #6f5f55;
+  --jiko-jiko-belly: #efe6dd;
+  --jiko-hut-wall: #fbe9da;
+  --jiko-hut-floor: #c98f62;
+  --jiko-hut-rug: #f7eee4;
+  --jiko-window-sky: #cbede8;
+  --jiko-stat-courage: #f2803c;
+  --jiko-stat-curiosity: #f2b33d;
+  --jiko-stat-connection: #9c8ce0;
+  --jiko-stat-body: #2ba8a0;
+  --jiko-stat-mind: #5868c4;
+  --jiko-on-stat-mind: #ffffff;
+  --jiko-on-stat: #1a1410;
+  --jiko-success: #2f9e6b;
+  --jiko-heads-up: #e8a12e;
+  --jiko-error: #c63340;
+  --jiko-fear-calm: #2ba8a0;
+  --jiko-fear-mid: #f2b33d;
+  --jiko-fear-spicy: #f2803c;
+  --jiko-gem-top: #ffd36b;
+  --jiko-gem-bottom: #2fb5a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --jiko-bg: #13242a;
+    --jiko-surface: #1e343b;
+    --jiko-line: #2c474f;
+    --jiko-ink: #f4ede6;
+    --jiko-muted: #afc0c0;
+    --jiko-primary: #f58a4a;
+    --jiko-on-primary: #1c1410;
+    --jiko-secondary: #3cc0b6;
+    --jiko-on-secondary: #0b2321;
+    --jiko-jiko-face: #ee7c8e;
+    --jiko-jiko-fur: #a8968a;
+    --jiko-jiko-fur-edge: #7a695e;
+    --jiko-jiko-belly: #e3d9cf;
+    --jiko-hut-wall: #1c3a40;
+    --jiko-hut-floor: #4a3830;
+    --jiko-hut-rug: #2a4a50;
+    --jiko-window-sky: #2e5866;
+  }
+}
+
+:root[data-theme="dark"] {
+  --jiko-bg: #13242a;
+  --jiko-surface: #1e343b;
+  --jiko-line: #2c474f;
+  --jiko-ink: #f4ede6;
+  --jiko-muted: #afc0c0;
+  --jiko-primary: #f58a4a;
+  --jiko-on-primary: #1c1410;
+  --jiko-secondary: #3cc0b6;
+  --jiko-on-secondary: #0b2321;
+  --jiko-jiko-face: #ee7c8e;
+  --jiko-jiko-fur: #a8968a;
+  --jiko-jiko-fur-edge: #7a695e;
+  --jiko-jiko-belly: #e3d9cf;
+  --jiko-hut-wall: #1c3a40;
+  --jiko-hut-floor: #4a3830;
+  --jiko-hut-rug: #2a4a50;
+  --jiko-window-sky: #2e5866;
+}
