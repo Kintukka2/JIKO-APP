@@ -1,6 +1,6 @@
 # JIKO: Product Spec v1
 
-*Status: v1 decisions are locked. Brand and visuals are parked (see §15).*
+*Status: v1 decisions are locked. Brand is in progress: Jiko, art style and tagline are locked; palette, type, logo and motion are open (see §15 and `product/BRAND.md`).*
 *Market evidence behind these decisions: `research/00_EXECUTIVE_SUMMARY.md`.*
 
 ---
@@ -195,18 +195,18 @@ Jiko grows from **Brave Days**, not calendar days. A Brave Day is any day the us
 
 | Stage | Brave Days | Unlocks |
 |---|---|---|
-| **Egg** | 0 | Onboarding: the user names Jiko |
-| **Hatchling** | 1 | All Item slots (§6.6). Appearance: **Body colour** |
-| **Sprout** | 7 | Appearance: **Eyes, Cheeks**. New animations |
-| **Wanderer** | 21 | Appearance: **Markings, Mouth**. Wanderings (§6.4), new emotes |
-| **Adventurer** | 42 | Appearance: **Belly**. More expressive personality |
-| **Grown** | 66 | Appearance: **Head feature**. Final form, "Fully Grown" celebration, title |
+| **Snowball** | 0 | Onboarding: a baby snow monkey asleep inside a snowball. Naming it melts the snow. |
+| **Snowdrop** | 1 | Newborn, oversized eyes. All Item slots (§6.6). Appearance: **Body colour** |
+| **Scamp** | 7 | Playful baby, first wobbly steps. Appearance: **Eyes, Cheeks**. New animations |
+| **Wanderer** | 21 | Fluffy youngster who starts exploring. Appearance: **Markings, Mouth**. Wanderings (§6.4), new emotes |
+| **Climber** | 42 | Confident young monkey, sturdier build. Appearance: **Belly**. More expressive personality |
+| **Trailblazer** | 66 | Fully grown, full snowy mane: the one who goes first. Appearance: **Head feature**. "Trailblazer" celebration and title |
 
 Locked Appearance parts show as greyed silhouettes with a message from Jiko: "I need to grow a little bigger first! Let's go on more adventures." (Finch pattern.)
 
 - **Jiko never resets.** Not between seasons, not after a break.
-- Reaching Grown takes **66 Brave Days**, the median habit-formation window. A steady user gets there in about one season.
-- **After Grown,** growth continues through stat levels (uncapped), titles, home expansion and seasonal collections.
+- Reaching Trailblazer takes **66 Brave Days**, the median habit-formation window. A steady user gets there in about one season.
+- **After Trailblazer,** growth continues through stat levels (uncapped), titles, home expansion and seasonal collections.
 - **Premium extras, optional:** alternate looks for each stage (colours, patterns). Growth itself is never paywalled.
 
 ### 6.3 Seasonal identity: items, not forms
@@ -226,7 +226,7 @@ Jiko reacts on the home screen to check-ins, Sparks, quests, forecasts and long 
 ### 6.6 Cosmetics (Finch model)
 The Jiko editor has two tabs: **Items** and **Appearance**. Jiko is drawn **front-on**, so every slot and part must read clearly from the front.
 
-**Items: 12 slots, all open from Hatchling**
+**Items: 12 slots, all open from Snowdrop**
 
 | # | Slot | Notes |
 |---|---|---|
@@ -249,13 +249,13 @@ Every slot has a **None** option. The editor shows a live preview ("Trying on �
 
 | Part | Unlocks at | Examples |
 |---|---|---|
-| Body colour | Hatchling | Base palette |
-| Eyes | Sprout | Shape and colour |
-| Cheeks | Sprout | Blush, freckles, none |
-| Markings | Wanderer | Head and back pattern |
-| Mouth | Wanderer | Beak, smile, tiny teeth, depending on Jiko's final species |
-| Belly | Adventurer | Patch shape and colour |
-| Head feature | Grown | Ears, crest, horns or tuft, depending on Jiko's final species |
+| Body colour | Snowdrop | Fur tone: grey-brown, snow white, honey… |
+| Eyes | Scamp | Shape and colour |
+| Cheeks | Scamp | The red face: blush intensity and colour |
+| Markings | Wanderer | Fur patterns on head and back |
+| Mouth | Wanderer | Smile, tiny teeth, little open "o" |
+| Belly | Climber | Lighter belly fur: shape and colour |
+| Head feature | Trailblazer | Snow mane or crown tuft (thick winter fur) |
 
 Once unlocked, changing an Appearance part is free. More options per part come from the shop, the pass and premium alternate looks.
 
@@ -276,7 +276,7 @@ Pals are tiny companion creatures that belong to Jiko, the way Jiko belongs to t
 
 ## 7. Jiko's Home (the world)
 
-Jiko's world is a **home with fixed slots**, using Finch's model. Every slot has a fixed position. A new item either **fills an empty slot** or **replaces** the item already there.
+Jiko's world is a **cosy mountain hut** with fixed slots, using Finch's model. Every slot has a fixed position. A new item either **fills an empty slot** or **replaces** the item already there.
 
 ### 7.1 Slots (v1)
 
@@ -285,7 +285,7 @@ Jiko's world is a **home with fixed slots**, using Finch's model. Every slot has
 | Room shell | Wallpaper · Floor · Door · Window · Ceiling light |
 | Furniture | Bed · Dresser · Rug · Shelf · Desk |
 | Decor | Wall art · Plant · Shelf item ×2 · Window-sill item |
-| **Unlockable** | Trophy Cabinet · Garden (outdoor scene) · Attic (second room) |
+| **Unlockable** | Trophy Cabinet · Onsen Garden (outdoor hot spring) · Attic (second room) |
 
 ### 7.2 Courage expands the home
 Stat milestones unlock new **slots and rooms**. That is how real-world bravery grows the world.
@@ -296,9 +296,9 @@ Stat milestones unlock new **slots and rooms**. That is how real-world bravery g
 | Courage Lv 5 | **Trophy Cabinet**, which displays Trial trophies and season badges |
 | Curiosity Lv 5 | **Window view** slot, with swappable views (city, ocean, mountains…) |
 | Connection Lv 5 | **Guest chair** slot, where Allies' Jikos can visit (§10) |
-| Body Lv 5 | **Garden** outdoor scene |
+| Body Lv 5 | **Onsen Garden**: the hut's own outdoor hot spring, where Jiko soaks after a brave day. Its own slots: onsen surround, stones, lanterns, plants, steam effect. Seasonal skins for the onsen (e.g. cherry blossom, autumn maple, winter snow) come from the shop and the pass. |
 | Mind Lv 5 | **Attic** second room |
-| Higher levels | More slots in Garden and Attic (expandable over future seasons) |
+| Higher levels | More slots in the Onsen Garden and Attic (expandable over future seasons) |
 
 ### 7.3 Getting items
 1. **Shop**, priced in Spark Gems, with a rotating weekly selection plus a permanent catalogue.
@@ -374,7 +374,7 @@ Rows in **bold** are free tiers. Every tier is premium. Item names are placehold
 | 25 | Wrapped Theme: First Light | | 55 | Frame: Legendary Dawn |
 | 26 | Rug: Sun Medallion | | **56** | **200 Spark Gems** |
 | 27 | Title: "Edge Walker" | | 57 | Ceiling Light: Sun Chandelier |
-| **28** | **Plant: Sun Sprout** | | 58 | Garden Item: Sundial |
+| **28** | **Plant: Sun Sprout** | | 58 | Onsen Garden Item: Stone Lantern |
 | 29 | Animated Jiko pose: Sunrise | | 59 | 250 Spark Gems |
 | 30 | Full Outfit: Morning Explorer | | **60** | **Signature Set: "First Light" (outfit + home set + badge)** |
 
@@ -462,12 +462,12 @@ Free users get the full Wrapped. Premium adds animated themes and extra cards (d
 
 ## 13. Onboarding (about 90 seconds to the first Spark)
 
-1. An egg appears. "Something's about to hatch…"
+1. A snowball sits in the snow, gently breathing. "Something's sleeping in here…"
 2. Three quick questions:
    - "What would you love more of?" (pick up to 2 stats)
    - Setting (city / town / countryside)
    - Budget
-3. **Name your Jiko.** It hatches.
+3. **Name your Jiko.** The snow melts away, and a baby snow monkey blinks awake.
 4. **First Daily Spark** right away, at bravery 1, plus an introduction to the Fear Forecast.
 5. Check-in explained: "Open the app each day and you'll climb the season track."
 6. A soft mention of Premium, skippable. No hard paywall.
@@ -483,10 +483,16 @@ Free users get the full Wrapped. Premium adds animated themes and extra cards (d
 
 ---
 
-## 15. Brand & visuals (parked)
-To be decided:
-- Jiko's species, shape and personality, and how it looks across 6 life stages
-- Art style (reference: Finch's flat, cozy 2D home in the attached screenshots)
+## 15. Brand & visuals
+Full brand working document: `product/BRAND.md`.
+
+**Locked:**
+- **Jiko is a Japanese snow monkey** (macaque). Origin story and life stages in §6.2 and BRAND.md.
+- **Art style:** Finch-style flat 2D, front-on.
+- **Tagline:** "Every brave tradition started with one monkey who went first."
+- **World:** a cosy mountain hut with an Onsen Garden.
+
+**Open:**
 - Colour palette, typography, logo
 - Visual design of the pass screen (reference: TFT single track with locked and open tiles)
 - Motion, sound, haptics
@@ -532,7 +538,7 @@ WrappedSnapshot user_id, season_id, payload(json)
 ## 17. v1 scope
 
 **In:**
-- Onboarding and hatching
+- Onboarding and the snowball awakening
 - Daily check-in and the season pass (single track, free and premium tiers, retroactive upgrade, level packs, bonus check-ins)
 - Daily Spark, weekly 3-card draw, Monthly Trial
 - Fear Forecast and basic Insights
@@ -548,7 +554,7 @@ WrappedSnapshot user_id, season_id, payload(json)
 - iOS and Android
 
 **Later:**
-- Garden and Attic rooms (scaffolded, unlocked in Season 2)
+- Onsen Garden and Attic (scaffolded, unlocked in Season 2)
 - Allies, Visits and shared quests
 - Premium quest packs beyond 2 launch packs
 - Weather and location awareness
@@ -580,8 +586,13 @@ WrappedSnapshot user_id, season_id, payload(json)
 | 18 | Real-world group events dropped |
 | 19 | Season Wrapped (Spotify-Wrapped style) |
 | 20 | No user-testing plan in scope; build first |
-| 21 | Brand and visuals parked until after spec |
+| 21 | Brand and visuals worked on after the spec (see §15) |
 | 22 | Wanderings, stat-unlocked home slots, JIKO Plus, starting gem economy and 4am rollover approved |
 | 23 | Jiko editor uses Finch's model: **Items** (12 slots) + **Appearance** (7 parts) |
 | 24 | Appearance parts unlock by life stage; front-on avatar, so **Mouth** replaces Tail |
 | 25 | **Pals** added: collectible companions for Jiko; headline Monthly Trial reward |
+| 26 | **Jiko is a Japanese snow monkey**; Finch-style flat 2D, front-on |
+| 27 | Life stages renamed: Snowball → Snowdrop → Scamp → Wanderer → Climber → Trailblazer |
+| 28 | Onboarding: the snowball melts when the user names Jiko (replaces the egg) |
+| 29 | Home is a cosy mountain hut; **Onsen Garden** unlocks at Body Lv 5 and gets seasonal skins |
+| 30 | Tagline: "Every brave tradition started with one monkey who went first." |
