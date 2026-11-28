@@ -98,7 +98,7 @@ Rules:
 |---|---|---|---|
 | **Daily Spark** | 1 per day | 1–3 | Tiny and always doable. Can be swapped once a day. |
 | **Weekly Quests** | 3 cards per week | Edge ±1 | One free redraw per week. Complete in any order. |
-| **Monthly Trial** | 1 per month | Edge +2 | Optional bigger challenge with a special reward. |
+| **Monthly Trial** | 1 per month | Edge +2 | Optional bigger challenge. Rewards a unique **Pal** (§6.7) and a Trophy. |
 | **Quest Packs** (premium) | On demand | Varies | Themed sets, e.g. "City Explorer", "Social Boss", "Solo Travel", "Creative Leap" |
 
 ### 4.3 Stats
@@ -196,11 +196,13 @@ Jiko grows from **Brave Days**, not calendar days. A Brave Day is any day the us
 | Stage | Brave Days | Unlocks |
 |---|---|---|
 | **Egg** | 0 | Onboarding: the user names Jiko |
-| **Hatchling** | 1 | First outfit slot |
-| **Sprout** | 7 | Accessory slot, new animations |
-| **Wanderer** | 21 | Wanderings (§6.4), new emotes |
-| **Adventurer** | 42 | Held-item slot, more expressive personality |
-| **Grown** | 66 | Final form, "Fully Grown" celebration, title |
+| **Hatchling** | 1 | All Item slots (§6.6). Appearance: **Body colour** |
+| **Sprout** | 7 | Appearance: **Eyes, Cheeks**. New animations |
+| **Wanderer** | 21 | Appearance: **Markings, Mouth**. Wanderings (§6.4), new emotes |
+| **Adventurer** | 42 | Appearance: **Belly**. More expressive personality |
+| **Grown** | 66 | Appearance: **Head feature**. Final form, "Fully Grown" celebration, title |
+
+Locked Appearance parts show as greyed silhouettes with a message from Jiko: "I need to grow a little bigger first! Let's go on more adventures." (Finch pattern.)
 
 - **Jiko never resets.** Not between seasons, not after a break.
 - Reaching Grown takes **66 Brave Days**, the median habit-formation window. A steady user gets there in about one season.
@@ -213,12 +215,62 @@ There are **no seasonal forms or evolutions**. Life stages are the only evolutio
 ### 6.4 Wanderings (light collection loop)
 From the Wanderer stage on, completing a weekly quest sends Jiko on a short **Wandering** that lasts a few hours. Jiko comes back with:
 - a small **discovery** (a one-line story or a fact about the world), and sometimes
-- a **found item** (a common home or outfit cosmetic) or bonus Spark Gems.
+- a **found item** (a common home or outfit cosmetic) or bonus Spark Gems, and
+- very rarely, a **Pal** (§6.7).
 
 Wanderings make each quest feel rewarded twice, give a reason to reopen the app later that day, and add character. Finch's adventures prove this pattern.
 
 ### 6.5 Reactions and personality
 Jiko reacts on the home screen to check-ins, Sparks, quests, forecasts and long absences (always warmly). Over time Jiko develops **likes** that it reveals in conversation, based on which stats the user levels most ("I love it when we try new food!").
+
+### 6.6 Cosmetics (Finch model)
+The Jiko editor has two tabs: **Items** and **Appearance**. Jiko is drawn **front-on**, so every slot and part must read clearly from the front.
+
+**Items: 12 slots, all open from Hatchling**
+
+| # | Slot | Notes |
+|---|---|---|
+| 1 | Outfit | Matching top-and-bottom set. Equipping it clears Top and Bottom, and equipping a Top or Bottom clears Outfit. |
+| 2 | Top | |
+| 3 | Bottom | |
+| 4 | Hat | |
+| 5 | Eyewear | Glasses, goggles, masks |
+| 6 | Neck | Necklaces, scarves, bow ties |
+| 7 | Shoes | |
+| 8 | Held item | Off-hand item, e.g. lantern, book, flower |
+| 9 | Back | Capes, wings, backpacks |
+| 10 | Hair | |
+| 11 | Aura | Sparkles and ambient effects |
+| 12 | Pal | Companion creature that follows Jiko (§6.7) |
+
+Every slot has a **None** option. The editor shows a live preview ("Trying on …") before purchase. Each item shows one of: Owned / Buy (Spark Gems) / PLUS / Available [date] (seasonal or Vault items).
+
+**Appearance: 7 parts, unlocked by life stage (§6.2)**
+
+| Part | Unlocks at | Examples |
+|---|---|---|
+| Body colour | Hatchling | Base palette |
+| Eyes | Sprout | Shape and colour |
+| Cheeks | Sprout | Blush, freckles, none |
+| Markings | Wanderer | Head and back pattern |
+| Mouth | Wanderer | Beak, smile, tiny teeth, depending on Jiko's final species |
+| Belly | Adventurer | Patch shape and colour |
+| Head feature | Grown | Ears, crest, horns or tuft, depending on Jiko's final species |
+
+Once unlocked, changing an Appearance part is free. More options per part come from the shop, the pass and premium alternate looks.
+
+### 6.7 Pals (Jiko's companions)
+Pals are tiny companion creatures that belong to Jiko, the way Jiko belongs to the user.
+
+- **Equipped Pal:** one Pal follows Jiko on the home screen and in the editor (Item slot 12).
+- **Pal collection:** every other owned Pal lives in the home and wanders between furniture.
+- **No needs:** Pals never get hungry, sad or neglected. They are purely for collection and charm.
+- **Sources:**
+  - **Monthly Trials:** each Trial awards a unique Pal (the headline Trial reward)
+  - **Wanderings:** rare finds
+  - **Season pass:** 1–2 premium tiers per season
+  - **Shop:** a small rotating selection, priced in Spark Gems
+- **Collection screen:** a Pal book with silhouettes for undiscovered Pals and a one-line story for each one found.
 
 ---
 
@@ -280,7 +332,8 @@ Once tier 60 is reached, every extra check-in until the season ends pays escalat
 Bonus check-ins are open to **all users, free and premium**. They keep the daily habit going into the next season.
 
 ### 8.3 Reward types
-- **Jiko outfits:** hats, scarves, glasses, capes, held items, full sets
+- **Jiko items:** any of the 12 Item slots (§6.6), including full Outfits and Pals
+- **Appearance options:** extra colours and styles for unlocked parts
 - **Home items:** any slot (§7.1)
 - **Spark Gems** bundles
 - **Profile:** titles, frames, badges
@@ -308,7 +361,7 @@ Rows in **bold** are free tiers. Every tier is premium. Item names are placehold
 | **12** | **Title: "First Light"** | | 42 | Emote: Victory Dance |
 | 13 | Plant: Morning Glory | | 43 | 100 Spark Gems |
 | 14 | Frame: Sunrise | | **44** | **Dawn Dresser (home)** |
-| 15 | Wallpaper: Peach Sky | | 45 | Sunrise Cape (outfit) |
+| 15 | Pal: Glowmoth | | 45 | Sunrise Cape (outfit) |
 | **16** | **100 Spark Gems** | | 46 | Plant: Golden Fern |
 | 17 | Held Item: Tiny Torch | | 47 | 100 Spark Gems |
 | 18 | Emote: Wave | | **48** | **Wrapped Theme: Golden Hour** |
@@ -446,7 +499,10 @@ To be decided:
 ```
 User            id, created_at, timezone, setting, budget, time_pref,
                 enabled_categories[], notification_time, plus_status
-Jiko            user_id, name, brave_days, life_stage, equipped{slot→item_id}, likes[]
+Jiko            user_id, name, brave_days, life_stage, likes[],
+                equipped{item_slot→item_id},          -- 12 Item slots (§6.6)
+                appearance{part→option_id}            -- 7 parts, gated by life_stage
+AppearanceOption id, part(enum7), unlock_stage, plus_only, gem_price?, source
 Stat            user_id, stat(enum5), xp, level, edge_level
 Quest           id, title, flavour, action, stat, bravery, time_band, cost_band,
                 setting_fit[], mode, categories[], reflection_prompt,
@@ -459,8 +515,10 @@ CheckIn         user_id, season_id, local_date            -- unique per (user, l
 Season          id, name, start_at, end_at, tier_count=60, bonus_days=6
 SeasonTier      season_id, tier, reward_id, is_free
 PassState       user_id, season_id, tier, premium(bool), bonus_checkins, purchased_levels
-Item            id, kind(outfit|home|title|frame|cardback|emote|wrapped_theme),
-                slot?, rarity, plus_only, gem_price?, source
+Item            id, kind(jiko_item|home|title|frame|cardback|emote|wrapped_theme),
+                slot?,   -- jiko_item: outfit|top|bottom|hat|eyewear|neck|shoes|held|back|hair|aura|pal
+                         -- home: see §7.1
+                rarity, plus_only, gem_price?, source, available_from?, story?(pal)
 Inventory       user_id, item_id, acquired_at, source
 HomeLayout      user_id, room, slot → item_id
 Wandering       user_id, started_at, returns_at, discovery_text, item_id?, gems
@@ -481,6 +539,8 @@ WrappedSnapshot user_id, season_id, payload(json)
 - AI quest pipeline with seed pool, validator and pool cache
 - 5 stats with Edge Levels
 - Jiko with 6 life stages, reactions and Wanderings
+- Jiko editor: 12 Item slots, 7 Appearance parts gated by life stage
+- Pals: equip one, collection book, Trial and Wandering sources
 - Home with fixed slots, Shop, Inventory, and stat-unlocked Trophy Cabinet and Window view
 - Spark Gems economy, IAP for Premium pass, Plus, gems and level packs
 - Season Wrapped and share card
@@ -521,3 +581,7 @@ WrappedSnapshot user_id, season_id, payload(json)
 | 19 | Season Wrapped (Spotify-Wrapped style) |
 | 20 | No user-testing plan in scope; build first |
 | 21 | Brand and visuals parked until after spec |
+| 22 | Wanderings, stat-unlocked home slots, JIKO Plus, starting gem economy and 4am rollover approved |
+| 23 | Jiko editor uses Finch's model: **Items** (12 slots) + **Appearance** (7 parts) |
+| 24 | Appearance parts unlock by life stage; front-on avatar, so **Mouth** replaces Tail |
+| 25 | **Pals** added: collectible companions for Jiko; headline Monthly Trial reward |
